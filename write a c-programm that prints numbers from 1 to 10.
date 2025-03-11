@@ -1,0 +1,46 @@
+write a c-programm that prints numbers from 1 to 10.
+
+
+                     Code(Using While Loop)
+
+#include <stdio.h>
+
+int main() 
+{
+  int i=1;
+  while(i<=10)
+  {
+      if(i<10)
+      {
+      printf("%d,",i);
+      }
+      else
+      {
+          printf("%d",i);
+      }
+      i=i+1;
+  }
+    return 0;
+}
+
+                           (FOR LOOP)
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+for(int i=1;i<=10;i++)
+{
+    if(i<10)
+    {
+        printf("%d,",i);
+    }
+    else
+    {
+        printf("%d",i);
+    }
+}
+    return 0;
+}
