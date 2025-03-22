@@ -1,0 +1,33 @@
+Draw a flowchart and write a program to count the number of digits in a given number.
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int N, count;
+
+    // Input from user
+    printf("Enter a number: ");
+    scanf("%d", &N);
+
+    // Handle zero separately
+    if (N == 0) 
+    {
+        count = 1;
+    } else 
+    {
+        // Loop to count digits
+        for (count=0 ;N != 0 ;count ++) 
+        {
+            N = N / 10; // Remove last digit
+            
+         }
+    }
+
+    // Print result
+    printf("The number of digits are %d.\n", count);
+
+    return 0;
+}
