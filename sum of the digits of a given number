@@ -1,0 +1,25 @@
+Draw a flowchart and write a program to find the sum of the digits of a given number.
+
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int N,R,sum=0;
+    printf("Enter A Value\t");
+    scanf("%d",&N);
+    while(N>0)
+    {
+        R=N%10;
+        sum=sum+R;
+        N=N/10;
+    }
+
+
+    printf("The sum of the digits are %d",sum);
+
+   
+    return 0;
+}
