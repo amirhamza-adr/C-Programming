@@ -1,0 +1,35 @@
+generate the first N terms of the Fibonacci series.
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+   int n,a=0,b=1,c,i;
+   printf("\n");
+   scanf("%d",&n);
+   
+   for(i=1;i<=n;i++)
+   {
+      
+       if(i<n)
+       {
+           printf("%d,",a);
+      
+       }
+       else
+       {
+           printf("%d",a); 
+           
+       }
+        c=a+b;
+       a=b;
+       b=c;
+   
+       
+       
+       
+   }
+    return 0;
+}
